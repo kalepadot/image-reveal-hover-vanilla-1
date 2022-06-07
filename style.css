@@ -1,15 +1,15 @@
-body {
+body{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-:root {
-    --size: 500px;
+:root{
+    --size: 250px;
 }
 
-.container {
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ body {
     position: relative;
 }
 
-.text {
+.text{
     font-size: 8rem;
     color: #808080;
     text-transform: uppercase;
@@ -29,20 +29,20 @@ body {
     z-index: 1;
 }
 
-.text:hover {
+.text:hover{
     color: #111;
 
 }
 
-.text:hover + .hover-container .hover-text {
+.text:hover + .hover-container .hover-text{
     opacity: 1;
 }
 
-.text:hover + .hover-container .img-container {
+.text:hover + .hover-container .img-container{
     opacity: 1;
 }
 
-.hover-text {
+.hover-text{
     z-index: 2;
     position: absolute;
     display: flex;
@@ -60,7 +60,7 @@ body {
     transition: opacity 250ms ease;
 }
 
-.img-container {
+.img-container{
     z-index: -2;
     position: absolute;
     inset: 0 0;
@@ -71,20 +71,20 @@ body {
 
 }
 
-.img-inner {
+.img-inner{
     position: absolute;
-    top: calc(var(--size) *-0.5);
+    top: calc(var(--size)*-0.5);
     left: calc(var(--size)*-0.5);
     width: 100%;
     height: 100%;
 
 }
 
-.img-inner img {
+.img-inner img{
     display: block;
     width: 100;
     height: 100%;
     object-fit: cover;
-    object-position: cover;
+    object-position: center;
     border-radius: 50%;
 }
