@@ -13,6 +13,15 @@
                 </span>
             </span>
         </div>
+        <!-- <div class="hover-container">
+            <a href="#" class="text">worldwide</a>
+            <span class="hover-text" aria-hidden="true">worldwide</span>
+            <span class="img-container">
+                <span class="img-inner">
+                    <img src="./fomo-butt.jpg" alt="butt">
+                </span>
+            </span>
+        </div> -->
         <script>
             let image = document.querySelector(".img-inner img");
             let text = document.querySelector(".hover-text");
@@ -26,7 +35,7 @@
                 size = parseFloat(size);
 
                 image.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-                text.style.clipPath = `circle(${size/2}px at ${x}px ${y}px)`;
+                text.style.clipPath = `circle(${--size/2}px at ${x}px ${y}px)`;
             })
         </script>
 </body>
