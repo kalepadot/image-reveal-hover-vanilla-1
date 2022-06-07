@@ -12,5 +12,20 @@
                 </span>
             </span>
         </div>
+        <script>
+            let image = document.querySelector(".img-inner img");
+            let text = document.querySelector(".hover-text");
 
+            document.addEventListener("mousemove", function(e) {
+                let x = e.clientX;
+                let y = e.clientY;
+
+                let size = getComputedStyle(document.body).getPropertyValue("--size")
+
+                size = parseFloat(size);
+
+                image.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+                text.style.clipPath = `circle(${size/2}px at ${x}px ${y}px)`;
+            })
+        </script>
 </body>
