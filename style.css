@@ -44,4 +44,39 @@ body {
 
 .hover-text {
     z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0 0;
+    font-size: 8rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #eee;
+    text-transform: uppercase;
+    opacity: 0;
+    pointer-events: none;
+    clip-path: circle(var(--size * 0.5) at 0 0);
+    transition: opacity 250ms ease;
 }
+
+.img-container {
+    z-index: -2;
+    position: absolute;
+    inset: 0 0;
+    width: var(--size);
+    height: var(--size);
+    opacity: 0;
+    transition: opacity 250ms ease;
+
+}
+
+.img-inner {
+    position: absolute;
+    top: calc(var(--size) *-0.5);
+    left: calc(var(--size)*-0.5);
+    width: 100%;
+    height: 100%;
+
+}
+
