@@ -3,7 +3,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    /* background-color: black; */
+    background-color: #eee;
 }
 
 :root{
@@ -32,8 +33,9 @@ body{
 }
 
 .text:hover{
-    color: #111;
+    /* color: #111; */
     transition: 350ms ease;
+    opacity: 0;
 
 }
 
